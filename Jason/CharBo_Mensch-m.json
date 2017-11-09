@@ -563,21 +563,38 @@
           "hover":"Enterhaken sind an Ketten oder Seilen befestigte Haken, die sowohl zum Kampf als auch zum klettern genutzt werden können.",
           "min": 1,
           "max": 30,
-          "default": 6,
+          "default": 4,
           "accent": [
+            1,
+            2,
             3,
             4,
             5,
             6,
             7,
-            8,
-            9,
           ]
 
         },
         "Faustkampf": {
           "type": "slider",
           "hover":"Es bietet sich an mit den Fäusten zu kämpfen, wenn man keine andere Waffe zur Hand hat oder man den Gegner nicht ernsthaft verletzen möchte.",
+          "min": 1,
+          "max": 30,
+          "default": 7,
+          "accent": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+          ]
+
+        },
+        "Speer": {
+          "type": "slider",
+          "hover":"Als Speere gelten alle langen Wurfwaffen. Speere sind leicht herzustellen und simpel in der Bedinung.",
           "min": 1,
           "max": 30,
           "default": 6,
@@ -592,6 +609,109 @@
           ]
 
         },
+        "Stabwaffe": {
+          "type": "slider",
+          "hover":"Stabwaffen sind lange Waffen, die man in der Hand behält während man mit ihnen kämpft, zum Beispiel Lanzen, Helebarden und Naginatas.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Dolch": {
+          "type": "slider",
+          "hover":"Dolche sind kurze Hieb- und Stichwaffen, die Schwertern ähneln, jedoch sind sie schneller und kleiner, wodurch sie eine typische Attentäter-Waffe sind.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Streitkolben": {
+          "type": "slider",
+          "hover":"Streitkolben sind Wuchtwaffen, die dem Gegner durch pure Kraft Schaden. Die Bedinung ist sehr leicht.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Kriegsbeil": {
+          "type": "slider",
+          "hover":"Kriegsbeile oder auch Streitäxte sind Schlag- und Hiebwaffen, die ähnlich wie Streitkolben geführt werden. Sie können jedoch mehr Schaden anrichten, sind aber auch teurer.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Wurfwaffen": {
+          "type": "slider",
+          "hover":"Wurfwaffen sind alle geworfenen Waffen, die nicht horinzontal geworfen werden und sich durch rotation stabilisieren, wie Messer, sondern in einem Bogen. Auch Speere zählen nicht zu den Wurfwaffen.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Wurfmesser": {
+          "type": "slider",
+          "hover":"Wurfmesser sind Wurfwaffen, die sich durch Rotation stabilisieren, und deren Flugbahn horinzontal verläuft, wie Messer oder Spielkarten.",
+          "min": 1,
+          "max": 30,
+          "default": 5,
+          "accent": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+          ]
+
+        },
+
       }
     },
     "Auftreten": {
