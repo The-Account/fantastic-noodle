@@ -1,0 +1,303 @@
+"mensch-männlich": {
+    "Rasse": {
+      "type": "label",
+      "value": "Mensch",
+      "hex": "000000"
+    },
+    "Geschlecht": {
+      "type": "label",
+      "value": "Männlich"
+    },
+    "Name": {
+      "type": "textfield",
+      "default": "John Doe"
+    },
+    "herkunft": {
+      "type": "dropdown",
+      "items": [
+        "Düsseldorf",
+        "Hitdorf",
+        "..."
+      ]
+    },
+    "Lebenspunkte": {
+      "type": "number",
+      "max": 100,
+      "min": 0
+    },
+    "Geistige Gesundheit": {
+      "type": "number",
+      "max": 100,
+      "min": 0
+    },
+    "Basiswerte": {
+      "type": "category",
+      "contents": {
+        "Berühmtheit": {
+          "type": "slider",
+          "hover":"Dieser Wert gibt an wie berühmt du bist. Berühmten Personen werden häufig Dinge gewehrt, die andere Charaktere nicht erhalten. Andere Spieler können jedoch einen berühmten Charakter leichter finden.",
+          "min": 1,
+          "max": 30,
+          "default": 1,
+          "accent": [
+            1,
+            2,
+            3,
+            4,
+            5,
+          ]
+
+        },
+        "Wissen": {
+          "type": "slider",
+          "hover":"Dieser Wert gibt an, wie viel dein Charakter weiss. Das wirkt sich auch insofern auf das Spiel aus, dass der Spieleiter dir in gegebenen Situationen gibt, die andere Leute nicht bekommen würden, wenn du einen hohen wert hast. ",
+          "min": 1,
+          "max": 10,
+          "default": 5,
+          "accent": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+          ]
+
+        },
+        "Aufmerksamkeit": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie schnell du etwas bemerkst, das nicht bemerkt werden möchte, z.B. Taschendiebe, Meuchelmörde oder andere Personen die Schleichen. Auch die Wahrnehmung hängt von deiner Aufmerksamkeit ab. Um so höher der Wert, des do Wahrscheinlich bekommst du Sachen mit.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Kraft": {
+          "type": "slider",
+          "hover":"Dieser Wert gibt an wie stark dein Charakter ist. Um so stärker er ist, umso besser kann er mit schweren Waffen wie Streitkolben und Äxten umgehen und desto mehr Gegenstände kann er mit sich tragen. Auch wenn dein Charakter aktiv etwas tuen möchte das Kraft erfordert, wie das Hochheben einer Person oder das Wegräumen von Geröll auf der Strasse kommt dieser Wert zum Einsatz.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Intelligenz": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie klug du bist. Das bestimmt unter anderem wie NPC auf dich reagieren, ob du Fähigkeiten durch das lesen von Büchern erlernst und auch ab und zu welche Informationen dir der Spieleiter gibt. Er ist Ausserdem deine Verteidigung gegen Magie.",
+          "min": 1,
+          "max": 30,
+          "default": 9,
+          "accent": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+          ]
+
+        },
+        "Agilität": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie gut du Ausweichen kannst, wie Geschickt du bist und wie gut du mit scharfen Waffen wie Schwertern und Dolchen kämpfst. Auch kommt dieser Wert zum Einsatz wenn du akrobatische Leistungen vollbringen willst.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Ausdauer": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie gut deine Ausdauer ist. Er Bestimmt wie lange du Kraftzehrende Aktionen ausführen kannst. Auch ist er wichtig für den Kampf. Rennst du einfach weiter, obwohl du keine Ausdauer mehr hast, fällst du vermutlich bewusstlos um.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Selbstbeherrschung": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie gut du dich selbst kennst und dich selbst beherrschen kannst. Je höher dieser Wert ist, desto mehr informationen über dein Aktuelles Skill-Level kannst du erfragen. Ausserdem bestimmt er wie gut du mit magischen Gegenständen umgehen kannst.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+      }
+    }
+  },
+   "Fähigkeiten": {
+     "type": "category",
+     "contents": {
+         "Alchemie": {
+           "type": "slider",
+           "hover":"Dieser Wert bestimmt wie gut deine alchemistischen Fähigkeiten sind, sprich wie gut du Tränke und Gifte brauen kannst, und wie gut diese Wirken. Er bestimmt allerdings nicht welche Gifte und Tränke du brauen kannst. Dafür solltest du ein hohes Wissen haben oder Rezepte während des Spielens lernen. Der Wert wird ausserdem als Kräuterkunde-Wert verwendet, und verrät dir ob Pflanzen und Pilze giftig sind.",
+           "min": 1,
+           "max": 30,
+           "default": 6,
+           "accent": [
+             3,
+             4,
+             5,
+             6,
+             7,
+             8,
+             9,
+           ]
+
+        },
+        "Medizinisches": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie gut dein Charakter Leute verarzten kann. Bei einem schlechten Wert infiziert sich eine Offene Wunde vermutlich, mit guten Werten hingegen können auch schwere Verletzungen ohne bleibenden Schäden geheilt werden.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+       },
+        "Attraktivität": {
+          "type": "slider",
+          "hover":"Dieser Wert bestimmt wie Attraktiv dein Charakter ist. Attraktivität ist natürlich Ansichtssache besonders Speziesübergreifend, doch dieser Wert stellt eine ungefähren Wert da. Dieser Wert kann im Spiel nichtmehr verändert werden, zum Beispiel durch Levelanstieg. In Staffel 1 ging dieser Wert bis 30. Was zu dieser Zeit 30 war, ist jetzt 15, damit man durch einen Extrem unattraktiven Charakter nicht so viele Punkte erhält, und es nicht so Kostenaufwendig ist einen Attraktiven Charakter zu erstellen. Um so attraktiver dein Charakter ist, desto wahrscheinlicher erhältst du Vorteile von NPC des anderen Geschlechts, und kannst sie verführen.",
+          "note":"Kann nach der Charaktererschaffung nichtmehr verändert werden",
+          "min": 1,
+          "max": 15,
+          "default": 7,
+          "accent": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+          ]
+
+       },
+       "Bewegungsgeschwindigkeit": {
+         "type": "slider",
+         "hover":"Dieser Wert bestimmt wie schnell sich dein Charakter fortbewegt. Das ist wichtig um zu wissen, wie weit dein Charakter nach einer Runde reisen kann.",
+         "min": 1,
+         "max": 30,
+         "default": 6,
+         "accent": [
+           3,
+           4,
+           5,
+           6,
+           7,
+           8,
+           9,
+         ]
+
+      },
+      "Klettern": {
+        "type": "slider",
+        "hover":"Dieser Wert bestimmt wie schnell und wie gut du klettern kannst, sowie wie oft du stürzt und wie stark du dich beim Fallen verletzt. Auch wie stark du dich beim Fallen verletzt wenn du nicht kletterst.",
+        "min": 1,
+        "max": 30,
+        "default": 6,
+        "accent": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+        ]
+     },
+     "Klettern": {
+       "type": "slider",
+       "hover":"Dieser Wert bestimmt wie schnell und wie gut du klettern kannst, sowie wie oft du stürzt und wie stark du dich beim Fallen verletzt. Auch wie stark du dich beim Fallen verletzt wenn du nicht kletterst.",
+       "min": 1,
+       "max": 30,
+       "default": 6,
+       "accent": [
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+       ]
+    },
+      "Dietrich": {
+        "type": "slider",
+        "hover":"Dieser wert bestimmt wie gut du mit Dietrichen umgehen kannst und Schlösser knacken kannst. ",
+        "min": 1,
+        "max": 30,
+        "default": 6,
+        "accent": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+        ]
+     },
+
+  }
+}
