@@ -560,7 +560,24 @@
         },
         "Enterhaken": {
           "type": "slider",
-          "hover":"Armbrüste sind leicht zu bedienende Fernkampfwaffen. Sie haben eine hohe Durchschlagskraft aber geringere Prezision.",
+          "hover":"Enterhaken sind an Ketten oder Seilen befestigte Haken, die sowohl zum Kampf als auch zum klettern genutzt werden können.",
+          "min": 1,
+          "max": 30,
+          "default": 6,
+          "accent": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+          ]
+
+        },
+        "Faustkampf": {
+          "type": "slider",
+          "hover":"Es bietet sich an mit den Fäusten zu kämpfen, wenn man keine andere Waffe zur Hand hat oder man den Gegner nicht ernsthaft verletzen möchte.",
           "min": 1,
           "max": 30,
           "default": 6,
