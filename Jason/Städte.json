@@ -36,6 +36,9 @@
       "title":"Ilien",
       "items": [
         "Avencastle",
+        "Elea",
+        "Elerin",
+        "Evous Corby",
         "Grize",
         "Litien",
         "Registon",
@@ -61,6 +64,27 @@
         "Agaberg",
         "Aglaien",
         "Araziani",
+        "Baltarin",
+        "Batehard",
+        "Bavarin",
+        "Biserienburg",
+        "Bitizi",
+        "Boreales",
+        "Brock",
+        "Bruterra Stadt",
+        "Bulin",
+        "Bulin 2",
+        "Bureni",
+        "Champei",
+        "Deguis",
+        "Dreferra",
+        "Drion",
+        "Enzili",
+        "Ergozill",
+        "Hardin Stadt",
+        "Heimat der Otazon",
+        "Heligetia",
+
 
       ]
     }
@@ -149,6 +173,8 @@
     {
       "title":"Keine Region",
       "items": [
+        "Barinschrad",
+        "Firet",
         "Gilien",
         "Irzil",
         "Oris",
