@@ -40,9 +40,17 @@
         "Elerin",
         "Evous Corby",
         "Grize",
+        "Irma",
+        "Kinex",
         "Litien",
+        "New Grize",
         "Registon",
+        "Reselin",
+        "Shymal",
+        "Smaran",
+        "Sy",
         "Tymilson",
+        "Werygrade",
 
       ]
     }
@@ -84,14 +92,53 @@
         "Hardin Stadt",
         "Heimat der Otazon",
         "Heligetia",
-
-
+        "Jacetron",
+        "Jaegon",
+        "Kakara",
+        "Kalla Stadt",
+        "Karnabit",
+        "Karsta",
+        "Katt",
+        "Kazumea",
+        "Koba Stadt",
+        "Lazuli",
+        "Markelion",
+        "Mazian",
+        "Nekeni Stadt",
+        "Obiris Hasal",
+        "Ock",
+        "Orga Stadt",
+        "Pagna",
+        "Pana Stadt",
+        "Papira",
+        "Periozill",
+        "Port ALve",
+        "Port Grof",
+        "Port Mos",
+        "Pran",
+        "Raevan Stadt",
+        "Rebenes",
+        "Rondia",
+        "Ta",
+        "Tanbiet",
+        "Tetlina",
+        "Vikistrim Stadt",
+        "Vinja",
+        "Weisfeld",
+        "Yeyera",
+        "Zinchi",
+        "Zula",
+        "Goblin Kolonien",
+        "Ruah"
       ]
     }
     {
       "title":"Outlands",
       "items": [
-        "",
+        "Enestor",
+        "Ki Lan",
+        "Nereïdos",
+        "Nereïdos Parvi"
       ]
     }
     {
@@ -168,6 +215,18 @@
         "Fort ut Gel",
         "Fort ut Datmor",
         "Fort ut Trizi",
+        "Fort ut Beyel",
+        "Fort ut Dolt",
+        "Fort ut Enk",
+        "Fort ut Gans",
+        "Fort ut Grinzul",
+        "Fort ut Haark",
+        "Fort ut Ka"
+        "Fort ut Linst",
+        "Fort ut Tessel",
+        "Fort ut Thum",
+
+        "Aqua Fort",
       ]
     }
     {
@@ -182,6 +241,7 @@
         "Trikolos",
         "Suhuur",
         "Einöde",
+        "Arkanes Wüstland",
       ]
     }
   ]
