@@ -1,4 +1,12 @@
-"mensch-männlich": {
+"meta": {
+  "var": [
+    {
+      "named":"städte",
+      "url":"./Jason/Städte.json"
+    }
+  ]
+},
+"main": {
     "Rasse": {
       "type": "label",
       "value": "Mensch",
@@ -8,17 +16,21 @@
       "type": "label",
       "value": "Männlich"
     },
+    "IsDLC": {
+      "type": "boolean",
+      "value": false
+    },
     "Name": {
       "type": "textfield",
       "default": "John Doe"
     },
     "Herkunft": {
       "type": "dropdown",
-      "items": [
-        "Düsseldorf",
-        "Hitdorf",
-        "..."
-      ]
+      "items": "var-städte"
+    },
+    "Wohnort": {
+      "type": "dropdown",
+      "items": "var-städte"
     },
     "Lebenspunkte": {
       "type": "number",

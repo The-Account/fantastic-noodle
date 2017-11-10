@@ -1,0 +1,162 @@
+{
+  "contents": [
+    "Zuffälig",
+    {
+      "title":"Inland",
+      "items": [
+        "Agamir",
+        "Agatium",
+        "Allime",
+        "Atros",
+        "Bad Liringen",
+        "Bornemes",
+        "Dispolis",
+        "Duros",
+        "Elfenbein-Stadt",
+        "Galinios",
+        "Gethen",
+        "Girsit",
+        "Hernea",
+        "Kareos",
+        "nu Buun",
+        "Perlmut-Stadt",
+        "Preol",
+        "Sortas",
+        "Teras",
+        "Tralin",
+        "Wandros",
+        "Waris",
+        "Xemes",
+        "Yemes",
+        "Boringen",
+        "Nomade in Alasir"
+      ]
+    }
+    {
+      "title":"Ilien",
+      "items": [
+        "Avencastle",
+        "Grize",
+        "Litien",
+        "Registon",
+        "Tymilson",
+
+      ]
+    }
+    {
+      "title":"Nagtzaam",
+      "items": [
+        "",
+      ]
+    }
+    {
+      "title":"Norden",
+      "items": [
+        "",
+      ]
+    }
+    {
+      "title":"Nordosten",
+      "items": [
+        "Agaberg",
+        "Aglaien",
+        "Araziani",
+
+      ]
+    }
+    {
+      "title":"Outlands",
+      "items": [
+        "",
+      ]
+    }
+    {
+      "title":"Südosten",
+      "items": [
+        "Akamun",
+        "Alewahh",
+        "Anbor",
+        "Arren",
+        "Arteratum",
+        "Atrax",
+        "Baltean",
+        "Barjin",
+        "Belon",
+        "Biewahh",
+        "Doraburi",
+        "Duhwahh",
+        "Goljeme",
+        "Gomin",
+        "Gorsom",
+        "Grand Pleoda",
+        "Hehwahh",
+        "Heros",
+        "Hilid",
+        "Hon Sei",
+        "Jana",
+        "Kajumei",
+        "Khaheng",
+        "Kormot",
+        "Kutarum",
+        "Larondon",
+        "Le Teng",
+        "Maneau",
+        "Mearis",
+        "Merlea",
+        "Mimien",
+        "Morton",
+        "Neu Sarr",
+        "Ohlwahh",
+        "Pexan",
+        "Ramsej",
+        "Rassstin",
+        "Ratures",
+        "Sarrr",
+        "Soronin",
+        "Sri Lombo",
+        "Sssirrran",
+        "Sssrrri Sarrr",
+        "Steinerner Hof",
+        "Tarwahh",
+        "Thonbor",
+        "Trahsss",
+        "Ungatar",
+        "Urrante",
+        "Wached",
+        "Weicheng",
+        "Wortrok",
+        "Xim",
+        "Paleoden"
+      ]
+    }
+    {
+      "title":"Ork Imperium",
+      "items": [
+        "Kentral",
+        "Fort ut Wurim",
+        "Fort ut Whel",
+        "Fort ut Kron",
+        "Fort ut Sal",
+        "Fort ut Fieten",
+        "Fort ut Bars",
+        "Fort ut Suk",
+        "Fort ut Badin",
+        "Fort ut Gel",
+        "Fort ut Datmor",
+        "Fort ut Trizi",
+      ]
+    }
+    {
+      "title":"Keine Region",
+      "items": [
+        "Gilien",
+        "Irzil",
+        "Oris",
+        "Rax",
+        "Trikolos",
+        "Suhuur",
+        "Einöde",
+      ]
+    }
+  ]
+}
