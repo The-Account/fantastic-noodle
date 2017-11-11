@@ -33,13 +33,31 @@
       ]
     }
     {
+      "title":"Hallen der Zuflucht",
+      "items": [
+        "1. Königreich",
+        "2. Königreich",
+        "3. Königreich",
+        "4. Königreich",
+        "5. Königreich",
+        "6. Königreich",
+        "7. Königreich",
+        "Bastion",
+        "Hauptstadt",
+        "Letzte Zuflucht"
+      ]
+    }
+    {
       "title":"Ilien",
       "items": [
         "Avencastle",
+        "Cale",
         "Elea",
         "Elerin",
         "Evous Corby",
+        "Garstaad",
         "Grize",
+        "Ight",
         "Irma",
         "Kinex",
         "Litien",
@@ -57,13 +75,63 @@
     {
       "title":"Nagtzaam",
       "items": [
-        "",
+        "Aradas",
+        "Birnitz",
+        "Endiloi",
+        "Erta",
+        "Huuton",
+        "Karthiochia",
+        "Kedo",
+        "Luhul",
+        "Narathon",
+        "Owaron",
+        "Sahbor",
+        "Saratan",
+        "Shan Shan"
+
       ]
     }
     {
       "title":"Norden",
       "items": [
-        "",
+        "Boros",
+        "Ersland",
+        "Eykgaaden",
+        "Farra",
+        "Flusskiefer",
+        "Fürsthaven",
+        "Gereat",
+        "Heilquell",
+        "Hiertz",
+        "Hornau",
+        "Joples",
+        "Königswald",
+        "Kronschmied",
+        "Landwehr",
+        "Lehl",
+        "Lintin",
+        "Lismund",
+        "Mysthöh",
+        "Nantarka",
+        "Nordburg",
+        "Pjörn",
+        "Pøjasmund",
+        "Rescartes",
+        "Schneefeste",
+        "Siangi",
+        "Sturmhaven",
+        "Talmund",
+        "Thorriot",
+        "Thronstadt",
+        "Westwall",
+        "Wilsley",
+        "Das Orb",
+        "Edernei",
+        "Königsinseln",
+        "Nomade in Ligao",
+        "Nomade in Maigao",
+        "Nomade in Tisir"
+
       ]
     }
     {
@@ -232,16 +300,21 @@
     {
       "title":"Keine Region",
       "items": [
+        "Amnia Talo",
         "Barinschrad",
         "Firet",
         "Gilien",
+        "Inlaiys",
         "Irzil",
+        "Mnoria",
         "Oris",
+        "Pteroanische Höhlen",
         "Rax",
         "Trikolos",
         "Suhuur",
-        "Einöde",
         "Arkanes Wüstland",
+        "Einöde",
+
       ]
     }
   ]
