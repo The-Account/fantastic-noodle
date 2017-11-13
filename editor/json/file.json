@@ -1,0 +1,849 @@
+{
+	"meta": {
+		"var": [{
+			"named": "städte",
+			"url": "./Jason/Städte.json"
+		}]
+	},
+	"main": {
+		"Rasse": {
+			"type": "label",
+			"value": "Mensch",
+			"hex": "000000"
+		},
+		"Geschlecht": {
+			"type": "label",
+			"value": "Männlich"
+		},
+		"IsDLC": {
+			"type": "boolean",
+			"value": false
+		},
+		"Name": {
+			"type": "textfield",
+			"default": "John Doe"
+		},
+		"Herkunft": {
+			"type": "dropdown",
+			"items": "var-städte"
+		},
+		"Wohnort": {
+			"type": "dropdown",
+			"items": "var-städte"
+		},
+		"Lebenspunkte": {
+			"type": "number",
+			"max": 100,
+			"min": 0
+		},
+		"Geistige Gesundheit": {
+			"type": "number",
+			"max": 100,
+			"min": 0
+		},
+		"Basiswerte": {
+			"type": "category",
+			"contents": {
+				"Berühmtheit": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an wie berühmt du bist. Berühmten Personen werden häufig Dinge gewehrt, die andere Charaktere nicht erhalten. Andere Spieler können jedoch einen berühmten Charakter leichter finden.",
+					"min": 1,
+					"max": 30,
+					"default": 1,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				"Wissen": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an, wie viel dein Charakter weiss. Das wirkt sich auch insofern auf das Spiel aus, dass der Spieleiter dir in gegebenen Situationen gibt, die andere Leute nicht bekommen würden, wenn du einen hohen wert hast. ",
+					"min": 1,
+					"max": 10,
+					"default": 5,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				"Aufmerksamkeit": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie schnell du etwas bemerkst, das nicht bemerkt werden möchte, z.B. Taschendiebe, Meuchelmörde oder andere Personen die Schleichen. Auch die Wahrnehmung hängt von deiner Aufmerksamkeit ab. Um so höher der Wert, des do Wahrscheinlich bekommst du Sachen mit.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Kraft": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an wie stark dein Charakter ist. Um so stärker er ist, umso besser kann er mit schweren Waffen wie Streitkolben und Äxten umgehen und desto mehr Gegenstände kann er mit sich tragen. Auch wenn dein Charakter aktiv etwas tuen möchte das Kraft erfordert, wie das Hochheben einer Person oder das Wegräumen von Geröll auf der Strasse kommt dieser Wert zum Einsatz.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Intelligenz": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie klug du bist. Das bestimmt unter anderem wie NPC auf dich reagieren, ob du Fähigkeiten durch das lesen von Büchern erlernst und auch ab und zu welche Informationen dir der Spieleiter gibt. Er ist Ausserdem deine Verteidigung gegen Magie.",
+					"min": 1,
+					"max": 30,
+					"default": 9,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				"Agilität": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Ausweichen kannst, wie Geschickt du bist und wie gut du mit scharfen Waffen wie Schwertern und Dolchen kämpfst. Auch kommt dieser Wert zum Einsatz wenn du akrobatische Leistungen vollbringen willst.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Ausdauer": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut deine Ausdauer ist. Er Bestimmt wie lange du Kraftzehrende Aktionen ausführen kannst. Auch ist er wichtig für den Kampf. Rennst du einfach weiter, obwohl du keine Ausdauer mehr hast, fällst du vermutlich bewusstlos um.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Selbstbeherrschung": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du dich selbst kennst und dich selbst beherrschen kannst. Je höher dieser Wert ist, desto mehr informationen über dein Aktuelles Skill-Level kannst du erfragen. Ausserdem bestimmt er wie gut du mit magischen Gegenständen umgehen kannst.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			}
+		},
+		"Fähigkeiten": {
+			"type": "category",
+			"contents": {
+				"Alchemie": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut deine alchemistischen Fähigkeiten sind, sprich wie gut du Tränke und Gifte brauen kannst, und wie gut diese Wirken. Er bestimmt allerdings nicht welche Gifte und Tränke du brauen kannst. Dafür solltest du ein hohes Wissen haben oder Rezepte während des Spielens lernen. Der Wert wird ausserdem als Kräuterkunde-Wert verwendet, und verrät dir ob Pflanzen und Pilze giftig sind.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Medizinisches": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut dein Charakter Leute verarzten kann. Bei einem schlechten Wert infiziert sich eine Offene Wunde vermutlich, mit guten Werten hingegen können auch schwere Verletzungen ohne bleibenden Schäden geheilt werden.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Attraktivität": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie Attraktiv dein Charakter ist. Attraktivität ist natürlich Ansichtssache besonders Speziesübergreifend, doch dieser Wert stellt eine ungefähren Wert da. Dieser Wert kann im Spiel nichtmehr verändert werden, zum Beispiel durch Levelanstieg. In Staffel 1 ging dieser Wert bis 30. Was zu dieser Zeit 30 war, ist jetzt 15, damit man durch einen Extrem unattraktiven Charakter nicht so viele Punkte erhält, und es nicht so Kostenaufwendig ist einen Attraktiven Charakter zu erstellen. Um so attraktiver dein Charakter ist, desto wahrscheinlicher erhältst du Vorteile von NPC des anderen Geschlechts, und kannst sie verführen.",
+					"note": "Kann nach der Charaktererschaffung nichtmehr verändert werden",
+					"min": 1,
+					"max": 15,
+					"default": 7,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				"Bewegungsgeschwindigkeit": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie schnell sich dein Charakter fortbewegt. Das ist wichtig um zu wissen, wie weit dein Charakter nach einer Runde reisen kann.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Klettern": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie schnell und wie gut du klettern kannst, sowie wie oft du stürzt und wie stark du dich beim Fallen verletzt. Auch wie stark du dich beim Fallen verletzt wenn du nicht kletterst.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Schiffahrt": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Schiffe steuern kannst. Dazu zählen die Tätigkeiten in der Takelage ebenso wie die am Steuer. Als guter Schiffsjunge solltest du auch Klettern können.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Schwimmen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut und wie schnell du schwimmen kannst. Bei einem Wert von unter 6 bestimmt er wie viel Zeit dir bleibt bis du ertrinkst wenn du ins Wasser fällst. Für die Dauer deines Schwimmens kannst du ebenfalls deinen Ausdauer Wert erhöhen.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Reiten": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie Gut dein Charakter Reiten kann, primär Pferde, aber auch andere Tiere. Um so höher der Wert, desto besser hört das Tier auf dich, desto besser lenkst du und desto weiter kommst du nach einer Spielrunde. Ist dein Wert sehr schlecht verletzt du dich wahrscheinlich beim Reiten, fällst vom Pferd oder es reitet dir davon.",
+					"min": 1,
+					"max": 30,
+					"default": 7,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				"Tiere Zähmen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Tiere zähmen kannst. Das bedeutet nicht das dein Charakter jetzt in den Wald rennen kann und da dann ein Wolfsrudel unter seiner Kontrolle steht. Es handelt sich bei den zu zähmenden Tieren Hauptsächlich um Vögel, wie zum Beispiel Brieftauben oder Bussarde und Herbivore Säugetiere wie Wildpferde um diese zu Reiten. Auch zähmbar sind Delfine. Streunende Hunde kannst du ebenfalls zähmen. Um ein Tier zu zähmen solltest du Nahrung zur Hilfe nehmen.",
+					"min": 1,
+					"max": 30,
+					"default": 2,
+					"accent": [
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				"Handwerk": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut Objekte sind die du Herstellst. Das können Waffen sein, aber auch Boote oder Möbel, Taschen, Statuen oder Kleidung und sehr vieles mehr. Mit einem guten handwerklichen Geschick lässt sich viel Geld verdienen.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Redekunst": {
+					"type": "slider",
+					"hover": "Dieser Wert Bestimmt wie überzeugend du auf NPC bist. Mit einem hohen Wert erhältst du bei Händlern niedrigere Preise und kannst Anhänger für dich gewinnen, wenn du eine Gruppe eröffnest (z. B. Religiös oder Revolutionär). Eine Kombination aus Redekunst und Attraktivität kann extrem wirksam sein. Mit einem sehr niedrigen Redekunst-Wert stotterst du wahrscheinlich und man kann dich nur schwer verstehen.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Immunsystem": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut dein Immunsystem ist, und wie wahrscheinlich du erkrankst. Mit einem extrem hohen Wert brauchst du dir auch in Verseuchten Gebieten keine Sorgen zu machen.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Schleichen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie leise und du bist und wie warscheinlich du gesehen wirst, wenn du dich versteckst.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Attentat": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie wahrscheinlich bemerkt wird wenn du jemanden ermordest der dich nicht gesehen hat. Ob du ihn ermordest ist nicht die frage, sondern ob die anderen es bemerken.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Diebstahl": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie wahrscheinlich bemerkt wird wenn du etwas stiehlst, zum Beispiel aus den Taschen eines NPC.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Dietrich": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du mit Dietrichen umgehen kannst und Schlösser knacken kannst. ",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Artillerie": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du mit Artillerie (z.B. Katapulte, Ballisten, Tribok o.Ä.) umgehen kannst und wie Zielsischer du triffst. Die meisten dieser Gerätschaften müssen mit mehreren Leuten bedient werden.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Taktik": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Taktiken für Armeen ausarbeiten und umsetzen kannst. Mit einem hohen Taktik Wert schreibst du gute Schlachtpläne und wirst ein guter Heerführer.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				"Bildung": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt ob du lesen, schreiben und rechnen kannst. Er bestimmt auch wie gut dein Charakter darin ist. Ein Wert von 2+ ermöglicht Strichrechnung, 4+ ermöglicht das Lesen, 7+ das Schreiben, 9+ Punktrechnung, 11+ Bruchrechnen und Quadrieren, 13+ Potenzrechnung und ab 16+ das ziehen von Wurzeln.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			}
+		},
+		"Waffen": {
+			"type": "category",
+			"contents": {
+				"Schwert": {
+					"type": "slider",
+					"hover": "Schwerter sind Hieb- und Stichwaffen, die aus einer langen Klinge und einem Griff bestehen. Optional haben sie Parierstangen. Ein Schwert ist sehr vielseitig.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Bogen": {
+					"type": "slider",
+					"hover": "Bögen sind Fernkampfwaffen, deren Nutzung viel Geschick erfordert. Bögen sind preiswert herzustellen und leicht zu transportieren.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Armbrust": {
+					"type": "slider",
+					"hover": "Armbrüste sind leicht zu bedienende Fernkampfwaffen. Sie haben eine hohe Durchschlagskraft aber geringere Prezision.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Blasrohr": {
+					"type": "slider",
+					"hover": "Blasrohre sind Fernkampfwaffen, mit denen man gut Giftpfeile verschiessen kann. Ausserdem kann man sie gut verstecken.",
+					"min": 1,
+					"max": 15,
+					"default": 4,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+
+				},
+				"Enterhaken": {
+					"type": "slider",
+					"hover": "Enterhaken sind an Ketten oder Seilen befestigte Haken, die sowohl zum Kampf als auch zum klettern genutzt werden können.",
+					"min": 1,
+					"max": 30,
+					"default": 4,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+
+				},
+				"Faustkampf": {
+					"type": "slider",
+					"hover": "Es bietet sich an mit den Fäusten zu kämpfen, wenn man keine andere Waffe zur Hand hat oder man den Gegner nicht ernsthaft verletzen möchte.",
+					"min": 1,
+					"max": 30,
+					"default": 7,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+
+				},
+				"Speer": {
+					"type": "slider",
+					"hover": "Als Speere gelten alle langen Wurfwaffen. Speere sind leicht herzustellen und simpel in der Bedinung.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Stabwaffe": {
+					"type": "slider",
+					"hover": "Stabwaffen sind lange Waffen, die man in der Hand behält während man mit ihnen kämpft, zum Beispiel Lanzen, Helebarden und Naginatas.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Dolch": {
+					"type": "slider",
+					"hover": "Dolche sind kurze Hieb- und Stichwaffen, die Schwertern ähneln, jedoch sind sie schneller und kleiner, wodurch sie eine typische Attentäter-Waffe sind.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Streitkolben": {
+					"type": "slider",
+					"hover": "Streitkolben sind Wuchtwaffen, die dem Gegner durch pure Kraft Schaden. Die Bedinung ist sehr leicht.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Kriegsbeil": {
+					"type": "slider",
+					"hover": "Kriegsbeile oder auch Streitäxte sind Schlag- und Hiebwaffen, die ähnlich wie Streitkolben geführt werden. Sie können jedoch mehr Schaden anrichten, sind aber auch teurer.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Wurfwaffen": {
+					"type": "slider",
+					"hover": "Wurfwaffen sind alle geworfenen Waffen, die nicht horinzontal geworfen werden und sich durch rotation stabilisieren, wie Messer, sondern in einem Bogen. Auch Speere zählen nicht zu den Wurfwaffen.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Wurfmesser": {
+					"type": "slider",
+					"hover": "Wurfmesser sind Wurfwaffen, die sich durch Rotation stabilisieren, und deren Flugbahn horinzontal verläuft, wie Messer oder Spielkarten.",
+					"min": 1,
+					"max": 30,
+					"default": 5,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+
+				},
+				"Peitsche": {
+					"type": "slider",
+					"hover": "Peitschen sind Schlagwaffen aus Leder. Sie sind schwer zu führen und richten nur mäßigen Schaden an, können aber ihren Gengner entwaffnen.",
+					"min": 1,
+					"max": 30,
+					"default": 5,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+
+				},
+				"Handschild": {
+					"type": "slider",
+					"hover": "Schilde sind zur Verteidigung genutzte Objekte. Handschilde sind alle Schilde die man mit einer Hand trägt, zum Beispiel Rundschilde oder Wappenschilde.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Großschild": {
+					"type": "slider",
+					"hover": "Schilde sind zur Verteidigung genutzte Objekte. Großschilde sind alle Schilde die auf der Erde abgesetzt werden, wenn man Kämpft, wie Turmschilde.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Gelegenheitswaffen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du mit Waffen umgehen kannst, die eigentlich keine sind, zum Beispiel Steine, Äste oder Stühle.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Suspekte Waffen": {
+					"type": "slider",
+					"hover": "Suspekte Waffen sind seltene Waffen, die durch keinen Wert genauer definiert sind. Dies sind meist Rituelle Waffen, die für Zeremonien verwendet werden, oder fremde Waffen von weit her.",
+					"min": 1,
+					"max": 30,
+					"default": 3,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+
+				}
+
+			}
+		},
+		"Auftreten": {
+			"type": "category",
+			"contents": {
+				"Größe": {
+					"type": "textfield",
+					"default": "Wie groß ist dein Charakter?"
+				},
+				"Gewicht": {
+					"type": "textfield",
+					"default": "Wie viel wiegt dein Charakter?"
+				},
+				"Hautfarbe": {
+					"type": "dropdown",
+					"items": [
+						"Weiß",
+						"Beige",
+						"Hellbraun",
+						"Mittelbraun",
+						"Dunkelbraun",
+						"Schwarzbraun"
+					]
+				},
+				"Haarfarbe": {
+					"type": "dropdown",
+					"items": [
+						"Schwarz",
+						"Dunkelbraun",
+						"Braun",
+						"Dunkelblond",
+						"Blond",
+						"Rot",
+						"Weiß",
+						"Grau"
+					]
+				},
+				"Alter": {
+					"type": "number",
+					"max": 70,
+					"min": 5
+				},
+				"Sonstiges": {
+					"type": "textfield",
+					"default": "Zeichnen deinen Charakter weitere äußerliche Merkmale aus?"
+				}
+
+
+			}
+		}
+	}
+}

@@ -1,6 +1,7 @@
 {
+  "type": "dropdown-list",
   "contents": [
-    "Zuffälig",
+    "Zuffälig"
     {
       "title":"Inland",
       "items": [
@@ -31,15 +32,33 @@
         "Boringen",
         "Nomade in Alasir"
       ]
+    },
+    {
+      "title":"Hallen der Zuflucht",
+      "items": [
+        "1. Königreich",
+        "2. Königreich",
+        "3. Königreich",
+        "4. Königreich",
+        "5. Königreich",
+        "6. Königreich",
+        "7. Königreich",
+        "Bastion",
+        "Hauptstadt",
+        "Letzte Zuflucht"
+      ]
     }
     {
       "title":"Ilien",
       "items": [
         "Avencastle",
+        "Cale",
         "Elea",
         "Elerin",
         "Evous Corby",
+        "Garstaad",
         "Grize",
+        "Ight",
         "Irma",
         "Kinex",
         "Litien",
@@ -50,22 +69,80 @@
         "Smaran",
         "Sy",
         "Tymilson",
-        "Werygrade",
+        "Werygrade"
 
       ]
-    }
+    },
     {
       "title":"Nagtzaam",
       "items": [
-        "",
+<<<<<<< HEAD:editor/json/Städte.json
+        ""
+=======
+        "Aradas",
+        "Birnitz",
+        "Endiloi",
+        "Erta",
+        "Huuton",
+        "Karthiochia",
+        "Kedo",
+        "Luhul",
+        "Narathon",
+        "Owaron",
+        "Sahbor",
+        "Saratan",
+        "Shan Shan"
+
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
       ]
     }
     {
       "title":"Norden",
       "items": [
-        "",
+<<<<<<< HEAD:editor/json/Städte.json
+        ""
+=======
+        "Boros",
+        "Ersland",
+        "Eykgaaden",
+        "Farra",
+        "Flusskiefer",
+        "Fürsthaven",
+        "Gereat",
+        "Heilquell",
+        "Hiertz",
+        "Hornau",
+        "Joples",
+        "Königswald",
+        "Kronschmied",
+        "Landwehr",
+        "Lehl",
+        "Lintin",
+        "Lismund",
+        "Mysthöh",
+        "Nantarka",
+        "Nordburg",
+        "Pjörn",
+        "Pøjasmund",
+        "Rescartes",
+        "Schneefeste",
+        "Siangi",
+        "Sturmhaven",
+        "Talmund",
+        "Thorriot",
+        "Thronstadt",
+        "Westwall",
+        "Wilsley",
+        "Das Orb",
+        "Edernei",
+        "Königsinseln",
+        "Nomade in Ligao",
+        "Nomade in Maigao",
+        "Nomade in Tisir"
+
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
       ]
-    }
+    },
     {
       "title":"Nordosten",
       "items": [
@@ -131,7 +208,7 @@
         "Goblin Kolonien",
         "Ruah"
       ]
-    }
+    },
     {
       "title":"Outlands",
       "items": [
@@ -140,7 +217,7 @@
         "Nereïdos",
         "Nereïdos Parvi"
       ]
-    }
+    },
     {
       "title":"Südosten",
       "items": [
@@ -199,7 +276,7 @@
         "Xim",
         "Paleoden"
       ]
-    }
+    },
     {
       "title":"Ork Imperium",
       "items": [
@@ -226,22 +303,32 @@
         "Fort ut Tessel",
         "Fort ut Thum",
 
-        "Aqua Fort",
+        "Aqua Fort"
       ]
-    }
+    },
     {
       "title":"Keine Region",
       "items": [
+        "Amnia Talo",
         "Barinschrad",
         "Firet",
         "Gilien",
+        "Inlaiys",
         "Irzil",
+        "Mnoria",
         "Oris",
+        "Pteroanische Höhlen",
         "Rax",
         "Trikolos",
         "Suhuur",
+<<<<<<< HEAD:editor/json/Städte.json
         "Einöde",
+        "Arkanes Wüstland"
+=======
         "Arkanes Wüstland",
+        "Einöde"
+
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
       ]
     }
   ]
