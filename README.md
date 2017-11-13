@@ -1,5 +1,2 @@
 # fantastic-noodle
-
-Dies ist die ReadMe Datei. Sie machen einen Fehler. Lesen sie die Datei nicht.
-
-Wirklich.
+Warum haben wir 91% JS und 9% html? 
