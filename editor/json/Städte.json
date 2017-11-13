@@ -49,6 +49,21 @@
       ]
     }
     {
+      "title":"Hallen der Zuflucht",
+      "items": [
+        "1. Königreich",
+        "2. Königreich",
+        "3. Königreich",
+        "4. Königreich",
+        "5. Königreich",
+        "6. Königreich",
+        "7. Königreich",
+        "Bastion",
+        "Hauptstadt",
+        "Letzte Zuflucht"
+      ]
+    }
+    {
       "title":"Ilien",
       "items": [
         "Avencastle",
@@ -77,8 +92,11 @@
       "title":"Nagtzaam",
       "items": [
 <<<<<<< HEAD:editor/json/Städte.json
+<<<<<<< HEAD:editor/json/Städte.json
         ""
 =======
+=======
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
         "Aradas",
         "Birnitz",
         "Endiloi",
@@ -93,6 +111,9 @@
         "Saratan",
         "Shan Shan"
 
+<<<<<<< HEAD:editor/json/Städte.json
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
+=======
 >>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
       ]
     }
@@ -100,8 +121,11 @@
       "title":"Norden",
       "items": [
 <<<<<<< HEAD:editor/json/Städte.json
+<<<<<<< HEAD:editor/json/Städte.json
         ""
 =======
+=======
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
         "Boros",
         "Ersland",
         "Eykgaaden",
@@ -140,6 +164,9 @@
         "Nomade in Maigao",
         "Nomade in Tisir"
 
+<<<<<<< HEAD:editor/json/Städte.json
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
+=======
 >>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
       ]
     },
@@ -322,8 +349,14 @@
         "Trikolos",
         "Suhuur",
 <<<<<<< HEAD:editor/json/Städte.json
+<<<<<<< HEAD:editor/json/Städte.json
         "Einöde",
         "Arkanes Wüstland"
+=======
+        "Arkanes Wüstland",
+        "Einöde"
+
+>>>>>>> ee528f2311c13d0f75cbd23e0b5fef639b5f442e:Jason/Städte.json
 =======
         "Arkanes Wüstland",
         "Einöde"
