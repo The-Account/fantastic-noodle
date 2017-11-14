@@ -6,7 +6,7 @@ fs.readFile('./json/file.json', function (err, data) {
     return console.error(err);
   }
   document.getElementById('container').innerHTML = `<span class="file-title">Charakterbogen</span><div class="field first"><span class="title">${JSON.parse(data).main.Rasse.value} - ${JSON.parse(data).main.Geschlecht.value}</span></div>${parse(JSON.parse(data).main)}`
-  document.getElementById('container').style.borderLeft = `20px solid #${JSON.parse(data).main.Rasse.hex}`
+  document.getElementById('container').style.borderLeft = `19px solid #${JSON.parse(data).main.Rasse.hex}`
 });
 
 function parse(object) {
