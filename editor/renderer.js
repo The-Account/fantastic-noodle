@@ -33,7 +33,7 @@ function parse(object) {
       case 'dropdown':
       result += `
       <div class="field" id="div-${key}">
-        <span class="title">${key}: </span>Hier kommt ein dropdown
+        <span class="title">${key}: </span>Hier kommt ein Dropdown
       </div>`;
       break;
 
