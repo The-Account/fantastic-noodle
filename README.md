@@ -1,14 +1,14 @@
 # fantastic-noodle
 To-Do:
 
-Leerzeile unter "field first"
+Leerzeile unter "field first".
 
-Standard-Zoom erhöhen
+Standard-Zoom erhöhen.
 
-Slider sind hinten noch nicht bünding mit den Feldern
-Slider ändert seine Größe, sobald der Wert über 10 steigt
+Slider sind hinten noch nicht bünding mit den Feldern.
+Slider ändert seine Größe, sobald der Wert über 10 steigt.
 
-Dropdowns (am besten mit Suchfunktion)
+Dropdowns (am besten mit Suchfunktion).
 
 "hover"
 
