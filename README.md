@@ -5,7 +5,7 @@ Standard-Zoom erhöhen
 
 Slider sind hinten noch nicht bünding mit den Feldern
 
-Dropdowns
+Dropdowns (am besten mit Suchfunktion)
 
 "hover"
 
