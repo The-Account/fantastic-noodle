@@ -1,5 +1,5 @@
 # fantastic-noodle
-To-Do:
+Zu-Tun:
 
 Leerzeile unter "field first".
 
@@ -17,3 +17,24 @@ Dropdowns (am besten mit Suchfunktion).
 Schriftart ändern in Superclarendon
 
 [cmd] + [z] für Schieberegeler
+
+===========
+
+To-Do:
+
+Spaceline under "field first".
+
+Increese Zoom.
+
+Slider are not in one line with the boxes.
+Slider changes Siße, when the number is 10 or higher.
+
+Dropdowns (including search-function).
+
+"hover"
+
+"note"
+
+Change font to Superclarendon
+
+[cmd] + [z] for Slider
