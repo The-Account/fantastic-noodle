@@ -2,6 +2,9 @@
 To-Do:
 
 Standard-Zoom erhöhen
-Slider
+
+Slider sind hinten noch nicht bünding mit den Feldern
+
 Dropdowns
+
 Schriftart ändern in Superclarendon
