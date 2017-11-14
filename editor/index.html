@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <style>
+      body {
+        font-family: Serif;
+      }
       #container {
-        width: 300px;
+        width: 500px;
         position: relative;
-        padding-left: 10px;
+        padding-left: 17px;
       }
       input[type=text] {
         position: absolute;
         right: 0;
+      }
+      input[type=text]:focus {
+        outline: none;
       }
       .label-value {
         position: absolute;
@@ -18,17 +24,18 @@
         text-align: right;
       }
       div.field {
-        margin-bottom: 5px;
+        margin-bottom: 7px;
       }
       div.category-contents {
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 7px;
       }
       .title {
         font-weight: bold;
       }
       .category-title {
         font-weight: bold;
+        font-size: 18px;
         text-decoration: underline;
       }
       .category::before {
@@ -41,10 +48,33 @@
         font-weight: bold;
       }
       .first {
-        margin-top: 10px;
+        margin-top: 14px;
+        font-size: 20px;
+      }
+      .slider-group {
+        position: absolute;
+        right: 0;
+      }
+      .sliderlabel {
+        margin-right: 5px;
+      }
+      .slider {
+        -webkit-appearance: none;
+        width: 75%;
+        height: 1px;
+        background-color: #000;
+        outline: none;
+      }
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 6px;
+        height: 20px;
+        border-radius: 3px;
+        background: #A7A7A7;
+        cursor: pointer;
       }
     </style>
-    <title>Hello World!</title>
+    <title>Somezing Charaktererschaffung</title>
   </head>
   <body>
     <div id="container">
@@ -53,6 +83,13 @@
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
+
+      function updateSliderLabel(id) {
+        let slider = document.getElementById(id);
+        let label = document.getElementById(`sliderlabel-${id}`);
+
+        label.innerHTML = slider.value;
+      }
     </script>
   </body>
 </html>
