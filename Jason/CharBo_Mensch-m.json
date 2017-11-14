@@ -210,7 +210,7 @@
 				"Attraktivität": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie Attraktiv dein Charakter ist. Attraktivität ist natürlich Ansichtssache besonders Speziesübergreifend, doch dieser Wert stellt eine ungefähren Wert da. Dieser Wert kann im Spiel nichtmehr verändert werden, zum Beispiel durch Levelanstieg. In Staffel 1 ging dieser Wert bis 30. Was zu dieser Zeit 30 war, ist jetzt 15, damit man durch einen Extrem unattraktiven Charakter nicht so viele Punkte erhält, und es nicht so Kostenaufwendig ist einen Attraktiven Charakter zu erstellen. Um so attraktiver dein Charakter ist, desto wahrscheinlicher erhältst du Vorteile von NPC des anderen Geschlechts, und kannst sie verführen.",
-					"note": "Kann nach der Charaktererschaffung nichtmehr verändert werden",
+					"note": "Kann nach der Charaktererschaffung nicht verändert werden",
 					"min": 1,
 					"max": 15,
 					"default": 7,

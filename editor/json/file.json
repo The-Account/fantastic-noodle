@@ -232,7 +232,7 @@
 						15
 					]
 				},
-				"Bewegungsgesgs": {
+				"Bewegungsgeschwindigkeit": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie schnell sich dein Charakter fortbewegt. Das ist wichtig um zu wissen, wie weit dein Charakter nach einer Runde reisen kann.",
 					"min": 1,
