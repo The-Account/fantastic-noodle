@@ -27,7 +27,7 @@ function parse(object) {
       break;
 
       case 'slider':
-      result += `<div class="field" id="div-${key}"><span class="title">${key}: </span>Hier kommt ein slider</div>`;
+      result += `<div class="field" id="div-${key}"><span class="title">${key}: </span>Hier kommt ein Slider</div>`;
       break;
 
       case 'category':
