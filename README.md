@@ -1,2 +1,8 @@
 # fantastic-noodle
-Warum haben wir 91% JS und 9% html? 
+To-Do:
+
+Schriftgröße von Spezies - Geschlecht leicht erhöhen
+Standard-Zoom erhöhen
+Slider
+Dropdowns
+Schriftart ändern in Superclarendon
