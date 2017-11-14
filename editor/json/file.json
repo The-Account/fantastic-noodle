@@ -839,7 +839,7 @@
 					"min": 5
 				},
 				"Sonstiges": {
-					"type": "textfield",
+					"type": "textlong",
 					"default": "Zeichnen deinen Charakter weitere äußerliche Merkmale aus?"
 				}
 			}

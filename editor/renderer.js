@@ -22,6 +22,14 @@ function parse(object) {
       </div>`
       break;
 
+      case 'textlong':
+      result += `
+      <div class="field" id="div-${key}">
+        <span class="title">${key}: </span>
+        <input type="text"></input>
+      </div>`
+      break;
+
       case 'dropdown':
       result += `
       <div class="field" id="div-${key}">
