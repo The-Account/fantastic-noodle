@@ -2,6 +2,48 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <style>
+      #container {
+        width: 300px;
+        position: relative;
+        padding-left: 10px;
+      }
+      input[type=text] {
+        position: absolute;
+        right: 0;
+      }
+      .label-value {
+        position: absolute;
+        right: 0;
+        text-align: right;
+      }
+      div.field {
+        margin-bottom: 5px;
+      }
+      div.category-contents {
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .title {
+        font-weight: bold;
+      }
+      .category-title {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .category::before {
+        content: '';
+        display: block;
+        height: 10px;
+      }
+      .file-title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .first {
+        margin-top: 10px;
+      }
+    </style>
     <title>Hello World!</title>
   </head>
   <body>
