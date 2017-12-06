@@ -3,9 +3,70 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+const Menu = electron.Menu;
+const dialog = electron.dialog;
 
 const path = require('path')
 const url = require('url')
+
+const template = [
+  {
+    label: 'File',
+    submenu: [
+      {
+        label: 'Open File...',
+        click () {openFile()}
+      },
+      {label: 'Save'},
+      {label: 'Save As...'}
+    ]
+  },
+  {
+    label: 'Edit',
+    submenu: [
+      {role: 'undo'},
+      {role: 'redo'},
+    ]
+  },
+  {
+    label: 'View',
+    submenu: [
+      {
+        label: 'Dev tools',
+        click () { BrowserWindow.getFocusedWindow().webContents.openDevTools() }
+      }
+    ]
+  }
+]
+
+const menu = Menu.buildFromTemplate(template);
+Menu.setApplicationMenu(menu);
+
+global.fileToOpen = '';
+
+function openFile() {
+  dialog.showOpenDialog({properties: ['openFile']}, filePaths => {
+    if (filePaths == undefined) {
+      return
+    }
+    let fileWindow = new BrowserWindow({width: 800, height: 600});
+
+    global.fileToOpen = filePaths[0];
+
+    fileWindow.loadURL(url.format({
+      pathname: path.join(__dirname, 'view.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+
+    fileWindow.on('closed', () => {
+      fileWindow = null;
+    })
+    if(mainWindow != null) {
+      mainWindow.close();
+    }
+  });
+}
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -17,7 +78,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'blank.html'),
     protocol: 'file:',
     slashes: true
   }))

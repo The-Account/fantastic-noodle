@@ -25,11 +25,11 @@
 		},
 		"Herkunft": {
 			"type": "dropdown",
-			"items": "var-städte"
+			"options": "var-städte"
 		},
 		"Wohnort": {
 			"type": "dropdown",
-			"items": "var-städte"
+			"options": "var-städte"
 		},
 		"Lebenspunkte": {
 			"type": "number",
@@ -810,7 +810,7 @@
 				},
 				"Hautfarbe": {
 					"type": "dropdown",
-					"items": [
+					"options": [
 						"Weiß",
 						"Beige",
 						"Hellbraun",
@@ -821,7 +821,7 @@
 				},
 				"Haarfarbe": {
 					"type": "dropdown",
-					"items": [
+					"options": [
 						"Schwarz",
 						"Dunkelbraun",
 						"Braun",

@@ -12,6 +12,7 @@
         padding-left: 17px;
       }
       input[type=text] {
+        width: 200px;
         position: absolute;
         right: 0;
       }
@@ -58,33 +59,21 @@
       .sliderlabel {
         margin-right: 5px;
       }
-      .slider {
-
-        -webkit-appearance: none;
-        width: 75%;
-        height: 2px;
-        background-color: #000;
-        outline: none;
-        cursor: pointer;
-      }
-      .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 6px;
-        height: 20px;
-        border-radius: 3px;
-        background: #A7A7A7;
-        cursor: pointer;
+      .dropdown {
+        width: 204px;
+        position: absolute;
+        right: 0;
       }
     </style>
     <title>Somezing Charaktererschaffung</title>
   </head>
   <body>
+    <h1>Charakterbogen</h1>
     <div id="container">
     </div>
 
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./view.renderer.js')
 
       function updateSliderLabel(id) {
         let slider = document.getElementById(id);

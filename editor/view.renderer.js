@@ -1,11 +1,13 @@
 const fs = require("fs");
+const remote = require("electron").remote;
 
-// Asynchronous read
-fs.readFile('./json/file.json', function (err, data) {
+const file = remote.getGlobal('fileToOpen');
+
+fs.readFile(file, function (err, data) {
   if (err) {
     return console.error(err);
   }
-  document.getElementById('container').innerHTML = `<span class="file-title">Charakterbogen</span><div class="field first"><span class="title">${JSON.parse(data).main.Rasse.value} - ${JSON.parse(data).main.Geschlecht.value}</span></div>${parse(JSON.parse(data).main)}`
+  document.getElementById('container').innerHTML = `<div class="field first"><span class="title">${JSON.parse(data).main.Rasse.value} - ${JSON.parse(data).main.Geschlecht.value}</span></div>${parse(JSON.parse(data).main)}`
   document.getElementById('container').style.borderLeft = `19px solid #${JSON.parse(data).main.Rasse.hex}`
 });
 
@@ -23,15 +25,22 @@ function parse(object) {
       break;
 
       case 'dropdown':
+      let select;
+      for (option of item.options) {
+        select += `<option value="${key}-${option}">${option}</option>`
+      }
       result += `
       <div class="field" id="div-${key}">
-        <span class="title">${key}: </span>Hier kommt ein dropdown
+        <span class="title">${key}: </span>
+        <select class="dropdown">
+          ${select}
+        </select>
       </div>`;
       break;
 
       case 'number':
       result += `
-      <div class="field" id="div-${key}">
+      <div class="field" id="div-${key}">f
         <span class="title">${key}: </span>
         <input type="text"></input>
       </div>`
