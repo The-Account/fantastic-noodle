@@ -11,21 +11,21 @@ const url = require('url')
 
 const template = [
   {
-    label: 'File',
+    label: 'Datei',
     submenu: [
       {
-        label: 'Open File...',
+        label: 'Datei öffnen...',
         click () {openFile()}
       },
-      {label: 'Save'},
-      {label: 'Save As...'}
+      {label: 'Speichern'},
+      {label: 'Speichern als...'}
     ]
   },
   {
-    label: 'Edit',
+    label: 'Bearbeiten',
     submenu: [
-      {role: 'undo'},
-      {role: 'redo'},
+      {role: 'Rückgängig machen'},
+      {role: 'Wiederhohlen'},
     ]
   },
   {

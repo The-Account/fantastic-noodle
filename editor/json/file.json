@@ -2,7 +2,7 @@
 	"meta": {
 		"var": [{
 			"named": "städte",
-			"url": "./Jason/Städte.json"
+			"url": "./json/Städte.json"
 		}]
 	},
 	"main": {
@@ -25,7 +25,7 @@
 		},
 		"Herkunft": {
 			"type": "dropdown",
-			"options": "var-städte"
+			"options": "abc"
 		},
 		"Wohnort": {
 			"type": "dropdown",
