@@ -8,8 +8,8 @@
 	"main": {
 		"Rasse": {
 			"type": "label",
-			"value": "Mensch",
-			"hex": "000000"
+			"value": "Palésh",
+			"hex": "aa2211"
 		},
 		"Geschlecht": {
 			"type": "label",
@@ -31,14 +31,19 @@
 			"type": "dropdown",
 			"items": "var-städte"
 		},
-		"Lebenspunkte": {
+		"Lebenspunkte (Vulper)": {
 			"type": "number",
-			"max": 100,
+			"max": 80,
+			"min": 0
+		},
+		"Lebenspunkte (Fuchs)": {
+			"type": "number",
+			"max": 50,
 			"min": 0
 		},
 		"Geistige Gesundheit": {
 			"type": "number",
-			"max": 100,
+			"max": 125,
 			"min": 0
 		},
 		"Basiswerte": {
@@ -63,15 +68,15 @@
 					"hover": "Dieser Wert gibt an, wie viel dein Charakter weiss. Das wirkt sich auch insofern auf das Spiel aus, dass der Spieleiter dir in gegebenen Situationen gibt, die andere Leute nicht bekommen würden, wenn du einen hohen wert hast. ",
 					"min": 1,
 					"max": 10,
-					"default": 5,
+					"default": 4,
 					"accent": [
+						1,
 						2,
 						3,
 						4,
 						5,
 						6,
-						7,
-						8
+						7
 					]
 				},
 				"Aufmerksamkeit": {
@@ -79,36 +84,84 @@
 					"hover": "Dieser Wert bestimmt wie schnell du etwas bemerkst, das nicht bemerkt werden möchte, z.B. Taschendiebe, Meuchelmörde oder andere Personen die Schleichen. Auch die Wahrnehmung hängt von deiner Aufmerksamkeit ab. Um so höher der Wert, des do Wahrscheinlich bekommst du Sachen mit.",
 					"min": 1,
 					"max": 30,
-					"default": 6,
+					"default": 7,
 					"accent": [
-						3,
 						4,
 						5,
 						6,
 						7,
 						8,
-						9
+						9,
+						10
 					]
 				},
 				"Kraft": {
 					"type": "slider",
 					"hover": "Dieser Wert gibt an wie stark dein Charakter ist. Um so stärker er ist, umso besser kann er mit schweren Waffen wie Streitkolben und Äxten umgehen und desto mehr Gegenstände kann er mit sich tragen. Auch wenn dein Charakter aktiv etwas tuen möchte das Kraft erfordert, wie das Hochheben einer Person oder das Wegräumen von Geröll auf der Strasse kommt dieser Wert zum Einsatz.",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 20,
+					"default": 3,
 					"accent": [
+						1,
+						2,
 						3,
 						4,
 						5,
-						6,
-						7,
-						8,
-						9
+						6
 					]
 				},
 				"Intelligenz": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie klug du bist. Das bestimmt unter anderem wie NPC auf dich reagieren, ob du Fähigkeiten durch das lesen von Büchern erlernst und auch ab und zu welche Informationen dir der Spieleiter gibt. Er ist Ausserdem deine Verteidigung gegen Magie.",
+					"note": "+2 bei Verteidigung gegen Magie",
+					"min": 1,
+					"max": 30,
+					"default": 10,
+					"accent": [
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				},
+				"Agilität": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Ausweichen kannst, wie Geschickt du bist und wie gut du mit scharfen Waffen wie Schwertern und Dolchen kämpfst. Auch kommt dieser Wert zum Einsatz wenn du akrobatische Leistungen vollbringen willst.",
+					"min": 1,
+					"max": 30,
+					"default": 7,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				"Ausdauer": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut deine Ausdauer ist. Er Bestimmt wie lange du Kraftzehrende Aktionen ausführen kannst. Auch ist er wichtig für den Kampf. Rennst du einfach weiter, obwohl du keine Ausdauer mehr hast, fällst du vermutlich bewusstlos um.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				"Selbstbeherrschung": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du dich selbst kennst und dich selbst beherrschen kannst. Je höher dieser Wert ist, desto mehr informationen über dein Aktuelles Skill-Level kannst du erfragen. Ausserdem bestimmt er wie gut du mit magischen Gegenständen umgehen kannst.",
 					"min": 1,
 					"max": 30,
 					"default": 9,
@@ -121,54 +174,6 @@
 						11,
 						12
 					]
-				},
-				"Agilität": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut du Ausweichen kannst, wie Geschickt du bist und wie gut du mit scharfen Waffen wie Schwertern und Dolchen kämpfst. Auch kommt dieser Wert zum Einsatz wenn du akrobatische Leistungen vollbringen willst.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Ausdauer": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut deine Ausdauer ist. Er Bestimmt wie lange du Kraftzehrende Aktionen ausführen kannst. Auch ist er wichtig für den Kampf. Rennst du einfach weiter, obwohl du keine Ausdauer mehr hast, fällst du vermutlich bewusstlos um.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Selbstbeherrschung": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut du dich selbst kennst und dich selbst beherrschen kannst. Je höher dieser Wert ist, desto mehr informationen über dein Aktuelles Skill-Level kannst du erfragen. Ausserdem bestimmt er wie gut du mit magischen Gegenständen umgehen kannst.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
 				}
 			}
 		},
@@ -180,15 +185,16 @@
 					"hover": "Dieser Wert bestimmt wie gut deine alchemistischen Fähigkeiten sind, sprich wie gut du Tränke und Gifte brauen kannst, und wie gut diese Wirken. Er bestimmt allerdings nicht welche Gifte und Tränke du brauen kannst. Dafür solltest du ein hohes Wissen haben oder Rezepte während des Spielens lernen. Der Wert wird ausserdem als Kräuterkunde-Wert verwendet, und verrät dir ob Pflanzen und Pilze giftig sind.",
 					"min": 1,
 					"max": 30,
-					"default": 6,
+					"default": 7,
 					"accent": [
-						3,
 						4,
 						5,
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				},
 				"Medizinisches": {
@@ -213,7 +219,7 @@
 					"note": "Kann nach der Charaktererschaffung nicht verändert werden",
 					"min": 1,
 					"max": 15,
-					"default": 7,
+					"default": 5,
 					"accent": [
 						1,
 						2,
@@ -237,47 +243,49 @@
 					"hover": "Dieser Wert bestimmt wie schnell sich dein Charakter fortbewegt. Das ist wichtig um zu wissen, wie weit dein Charakter nach einer Runde reisen kann.",
 					"min": 1,
 					"max": 30,
-					"default": 6,
+					"default": 4,
 					"accent": [
+						1,
+						2,
 						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				"Klettern": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie schnell und wie gut du klettern kannst, sowie wie oft du stürzt und wie stark du dich beim Fallen verletzt. Auch wie stark du dich beim Fallen verletzt wenn du nicht kletterst.",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 35,
+					"default": 8,
 					"accent": [
-						3,
-						4,
 						5,
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				},
 				"Schiffahrt": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie gut du Schiffe steuern kannst. Dazu zählen die Tätigkeiten in der Takelage ebenso wie die am Steuer. Als guter Schiffsjunge solltest du auch Klettern können.",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 25,
+					"default": 3,
 					"accent": [
+						1,
+						2,
 						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				"Schwimmen": {
@@ -285,20 +293,110 @@
 					"hover": "Dieser Wert bestimmt wie gut und wie schnell du schwimmen kannst. Bei einem Wert von unter 6 bestimmt er wie viel Zeit dir bleibt bis du ertrinkst wenn du ins Wasser fällst. Für die Dauer deines Schwimmens kannst du ebenfalls deinen Ausdauer Wert erhöhen.",
 					"min": 1,
 					"max": 30,
-					"default": 6,
+					"default": 5,
 					"accent": [
+						2,
 						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				"Reiten": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie Gut dein Charakter Reiten kann, primär Pferde, aber auch andere Tiere. Um so höher der Wert, desto besser hört das Tier auf dich, desto besser lenkst du und desto weiter kommst du nach einer Spielrunde. Ist dein Wert sehr schlecht verletzt du dich wahrscheinlich beim Reiten, fällst vom Pferd oder es reitet dir davon.",
+					"min": 1,
+					"max": 10,
+					"default": 1,
+					"accent": [
+						1
+					]
+				},
+				"Tiere Zähmen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Tiere zähmen kannst. Das bedeutet nicht das dein Charakter jetzt in den Wald rennen kann und da dann ein Wolfsrudel unter seiner Kontrolle steht. Es handelt sich bei den zu zähmenden Tieren Hauptsächlich um Vögel, wie zum Beispiel Brieftauben oder Bussarde und Herbivore Säugetiere wie Wildpferde um diese zu Reiten. Auch zähmbar sind Delfine. Streunende Hunde kannst du ebenfalls zähmen. Um ein Tier zu zähmen solltest du Nahrung zur Hilfe nehmen.",
+					"min": 1,
+					"max": 35,
+					"default": 10,
+					"accent": [
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				"Handwerk": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut Objekte sind die du Herstellst. Das können Waffen sein, aber auch Boote oder Möbel, Taschen, Statuen oder Kleidung und sehr vieles mehr. Mit einem guten handwerklichen Geschick lässt sich viel Geld verdienen.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				"Redekunst": {
+					"type": "slider",
+					"hover": "Dieser Wert Bestimmt wie überzeugend du auf NPC bist. Mit einem hohen Wert erhältst du bei Händlern niedrigere Preise und kannst Anhänger für dich gewinnen, wenn du eine Gruppe eröffnest (z. B. Religiös oder Revolutionär). Eine Kombination aus Redekunst und Attraktivität kann extrem wirksam sein. Mit einem sehr niedrigen Redekunst-Wert stotterst du wahrscheinlich und man kann dich nur schwer verstehen.",
+					"min": 1,
+					"max": 30,
+					"default": 5,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				"Immunsystem": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut dein Immunsystem ist, und wie wahrscheinlich du erkrankst. Mit einem extrem hohen Wert brauchst du dir auch in Verseuchten Gebieten keine Sorgen zu machen.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+					  11
+					]
+				},
+				"Schleichen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie leise und du bist und wie warscheinlich du gesehen wirst, wenn du dich versteckst.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				"Attentat": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie wahrscheinlich bemerkt wird wenn du jemanden ermordest der dich nicht gesehen hat. Ob du ihn ermordest ist nicht die frage, sondern ob die anderen es bemerken.",
 					"min": 1,
 					"max": 30,
 					"default": 7,
@@ -310,99 +408,6 @@
 						8,
 						9,
 						10
-					]
-				},
-				"Tiere Zähmen": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut du Tiere zähmen kannst. Das bedeutet nicht das dein Charakter jetzt in den Wald rennen kann und da dann ein Wolfsrudel unter seiner Kontrolle steht. Es handelt sich bei den zu zähmenden Tieren Hauptsächlich um Vögel, wie zum Beispiel Brieftauben oder Bussarde und Herbivore Säugetiere wie Wildpferde um diese zu Reiten. Auch zähmbar sind Delfine. Streunende Hunde kannst du ebenfalls zähmen. Um ein Tier zu zähmen solltest du Nahrung zur Hilfe nehmen.",
-					"min": 1,
-					"max": 30,
-					"default": 2,
-					"accent": [
-						1,
-						2,
-						3,
-						4
-					]
-				},
-				"Handwerk": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut Objekte sind die du Herstellst. Das können Waffen sein, aber auch Boote oder Möbel, Taschen, Statuen oder Kleidung und sehr vieles mehr. Mit einem guten handwerklichen Geschick lässt sich viel Geld verdienen.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Redekunst": {
-					"type": "slider",
-					"hover": "Dieser Wert Bestimmt wie überzeugend du auf NPC bist. Mit einem hohen Wert erhältst du bei Händlern niedrigere Preise und kannst Anhänger für dich gewinnen, wenn du eine Gruppe eröffnest (z. B. Religiös oder Revolutionär). Eine Kombination aus Redekunst und Attraktivität kann extrem wirksam sein. Mit einem sehr niedrigen Redekunst-Wert stotterst du wahrscheinlich und man kann dich nur schwer verstehen.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Immunsystem": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut dein Immunsystem ist, und wie wahrscheinlich du erkrankst. Mit einem extrem hohen Wert brauchst du dir auch in Verseuchten Gebieten keine Sorgen zu machen.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Schleichen": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie leise und du bist und wie warscheinlich du gesehen wirst, wenn du dich versteckst.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Attentat": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie wahrscheinlich bemerkt wird wenn du jemanden ermordest der dich nicht gesehen hat. Ob du ihn ermordest ist nicht die frage, sondern ob die anderen es bemerken.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
 					]
 				},
 				"Diebstahl": {
@@ -425,16 +430,16 @@
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie gut du mit Dietrichen umgehen kannst und Schlösser knacken kannst. ",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 35,
+					"default": 5,
 					"accent": [
+						2,
 						3,
 						4,
 						5,
 						6,
 						7,
-						8,
-						9
+						8
 					]
 				},
 				"Artillerie": {
@@ -442,260 +447,18 @@
 					"hover": "Dieser Wert bestimmt wie gut du mit Artillerie (z.B. Katapulte, Ballisten, Tribok o.Ä.) umgehen kannst und wie Zielsischer du triffst. Die meisten dieser Gerätschaften müssen mit mehreren Leuten bedient werden.",
 					"min": 1,
 					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Taktik": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt wie gut du Taktiken für Armeen ausarbeiten und umsetzen kannst. Mit einem hohen Taktik Wert schreibst du gute Schlachtpläne und wirst ein guter Heerführer.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				},
-				"Bildung": {
-					"type": "slider",
-					"hover": "Dieser Wert bestimmt ob du lesen, schreiben und rechnen kannst. Er bestimmt auch wie gut dein Charakter darin ist. Ein Wert von 2+ ermöglicht Strichrechnung, 4+ ermöglicht das Lesen, 7+ das Schreiben, 9+ Punktrechnung, 11+ Bruchrechnen und Quadrieren, 13+ Potenzrechnung und ab 16+ das ziehen von Wurzeln.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-				}
-			}
-		},
-		"Waffen": {
-			"type": "category",
-			"contents": {
-				"Schwert": {
-					"type": "slider",
-					"hover": "Schwerter sind Hieb- und Stichwaffen, die aus einer langen Klinge und einem Griff bestehen. Optional haben sie Parierstangen. Ein Schwert ist sehr vielseitig.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Bogen": {
-					"type": "slider",
-					"hover": "Bögen sind Fernkampfwaffen, deren Nutzung viel Geschick erfordert. Bögen sind preiswert herzustellen und leicht zu transportieren.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Armbrust": {
-					"type": "slider",
-					"hover": "Armbrüste sind leicht zu bedienende Fernkampfwaffen. Sie haben eine hohe Durchschlagskraft aber geringere Prezision.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Blasrohr": {
-					"type": "slider",
-					"hover": "Blasrohre sind Fernkampfwaffen, mit denen man gut Giftpfeile verschiessen kann. Ausserdem kann man sie gut verstecken.",
-					"min": 1,
-					"max": 15,
-					"default": 4,
-					"accent": [
-						2,
-						3,
-						4,
-						5,
-						6,
-						7
-					]
-
-				},
-				"Enterhaken": {
-					"type": "slider",
-					"hover": "Enterhaken sind an Ketten oder Seilen befestigte Haken, die sowohl zum Kampf als auch zum klettern genutzt werden können.",
-					"min": 1,
-					"max": 30,
-					"default": 4,
+					"default": 2,
 					"accent": [
 						1,
 						2,
 						3,
 						4,
-						5,
-						6,
-						7
+						5
 					]
-
 				},
-				"Faustkampf": {
+				"Taktik": {
 					"type": "slider",
-					"hover": "Es bietet sich an mit den Fäusten zu kämpfen, wenn man keine andere Waffe zur Hand hat oder man den Gegner nicht ernsthaft verletzen möchte.",
-					"min": 1,
-					"max": 30,
-					"default": 7,
-					"accent": [
-						4,
-						5,
-						6,
-						7,
-						8,
-						9,
-						10
-					]
-
-				},
-				"Speer": {
-					"type": "slider",
-					"hover": "Als Speere gelten alle langen Wurfwaffen. Speere sind leicht herzustellen und simpel in der Bedinung.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Stabwaffe": {
-					"type": "slider",
-					"hover": "Stabwaffen sind lange Waffen, die man in der Hand behält während man mit ihnen kämpft, zum Beispiel Lanzen, Helebarden und Naginatas.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Dolch": {
-					"type": "slider",
-					"hover": "Dolche sind kurze Hieb- und Stichwaffen, die Schwertern ähneln, jedoch sind sie schneller und kleiner, wodurch sie eine typische Attentäter-Waffe sind.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Streitkolben": {
-					"type": "slider",
-					"hover": "Streitkolben sind Wuchtwaffen, die dem Gegner durch pure Kraft Schaden. Die Bedinung ist sehr leicht.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Kriegsbeil": {
-					"type": "slider",
-					"hover": "Kriegsbeile oder auch Streitäxte sind Schlag- und Hiebwaffen, die ähnlich wie Streitkolben geführt werden. Sie können jedoch mehr Schaden anrichten, sind aber auch teurer.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Wurfwaffen": {
-					"type": "slider",
-					"hover": "Wurfwaffen sind alle geworfenen Waffen, die nicht horinzontal geworfen werden und sich durch rotation stabilisieren, wie Messer, sondern in einem Bogen. Auch Speere zählen nicht zu den Wurfwaffen.",
-					"min": 1,
-					"max": 30,
-					"default": 6,
-					"accent": [
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9
-					]
-
-				},
-				"Wurfmesser": {
-					"type": "slider",
-					"hover": "Wurfmesser sind Wurfwaffen, die sich durch Rotation stabilisieren, und deren Flugbahn horinzontal verläuft, wie Messer oder Spielkarten.",
+					"hover": "Dieser Wert bestimmt wie gut du Taktiken für Armeen ausarbeiten und umsetzen kannst. Mit einem hohen Taktik Wert schreibst du gute Schlachtpläne und wirst ein guter Heerführer.",
 					"min": 1,
 					"max": 30,
 					"default": 5,
@@ -708,17 +471,230 @@
 						7,
 						8
 					]
+				},
+				"Bildung": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt ob du lesen, schreiben und rechnen kannst. Er bestimmt auch wie gut dein Charakter darin ist. Ein Wert von 2+ ermöglicht Strichrechnung, 4+ ermöglicht das Lesen, 7+ das Schreiben, 9+ Punktrechnung, 11+ Bruchrechnen und Quadrieren, 13+ Potenzrechnung und ab 16+ das ziehen von Wurzeln.",
+					"min": 1,
+					"max": 30,
+					"default": 4,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			}
+		},
+		"Waffen": {
+			"type": "category",
+			"contents": {
+				"Schwert": {
+					"type": "slider",
+					"hover": "Schwerter sind Hieb- und Stichwaffen, die aus einer langen Klinge und einem Griff bestehen. Optional haben sie Parierstangen. Ein Schwert ist sehr vielseitig.",
+					"min": 1,
+					"max": 20,
+					"default": 4,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+					]
+
+				},
+				"Bogen": {
+					"type": "slider",
+					"hover": "Bögen sind Fernkampfwaffen, deren Nutzung viel Geschick erfordert. Bögen sind preiswert herzustellen und leicht zu transportieren.",
+					"min": 1,
+					"max": 25,
+					"default": 5,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+
+				},
+				"Armbrust": {
+					"type": "slider",
+					"hover": "Armbrüste sind leicht zu bedienende Fernkampfwaffen. Sie haben eine hohe Durchschlagskraft aber geringere Prezision.",
+					"min": 1,
+					"max": 20,
+					"default": 2,
+					"accent": [
+						1,
+						2,
+						3,
+						4
+					]
+
+				},
+				"Blasrohr": {
+					"type": "slider",
+					"hover": "Blasrohre sind Fernkampfwaffen, mit denen man gut Giftpfeile verschiessen kann. Ausserdem kann man sie gut verstecken.",
+					"min": 1,
+					"max": 15,
+					"default": 7,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+
+				},
+				"Enterhaken": {
+					"type": "slider",
+					"hover": "Enterhaken sind an Ketten oder Seilen befestigte Haken, die sowohl zum Kampf als auch zum klettern genutzt werden können.",
+					"min": 1,
+					"max": 20,
+					"default": 4,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+
+				},
+				"Faustkampf": {
+					"type": "slider",
+					"hover": "Es bietet sich an mit den Fäusten zu kämpfen, wenn man keine andere Waffe zur Hand hat oder man den Gegner nicht ernsthaft verletzen möchte. Der bestimmt nur den Kampf des Vulper, nicht den des Fuchses.",
+					"min": 1,
+					"max": 25,
+					"default": 5,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+
+				},
+				"Speer": {
+					"type": "slider",
+					"hover": "Als Speere gelten alle langen Wurfwaffen. Speere sind leicht herzustellen und simpel in der Bedinung.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+
+				},
+				"Stabwaffe": {
+					"type": "slider",
+					"hover": "Stabwaffen sind lange Waffen, die man in der Hand behält während man mit ihnen kämpft, zum Beispiel Lanzen, Helebarden und Naginatas.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+
+				},
+				"Dolch": {
+					"type": "slider",
+					"hover": "Dolche sind kurze Hieb- und Stichwaffen, die Schwertern ähneln, jedoch sind sie schneller und kleiner, wodurch sie eine typische Attentäter-Waffe sind.",
+					"min": 1,
+					"max": 25,
+					"default": 6,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+
+				},
+				"Streitkolben": {
+					"type": "slider",
+					"hover": "Streitkolben sind Wuchtwaffen, die dem Gegner durch pure Kraft Schaden. Die Bedinung ist sehr leicht.",
+					"min": 1,
+					"max": 20,
+					"default": 2,
+					"accent": [
+						1,
+						2,
+						3,
+						4
+					]
+
+				},
+				"Kriegsbeil": {
+					"type": "slider",
+					"hover": "Kriegsbeile oder auch Streitäxte sind Schlag- und Hiebwaffen, die ähnlich wie Streitkolben geführt werden. Sie können jedoch mehr Schaden anrichten, sind aber auch teurer.",
+					"min": 1,
+					"max": 20,
+					"default": 2,
+					"accent": [
+						1,
+						2,
+						3,
+						4
+					]
+
+				},
+				"Wurfwaffen": {
+					"type": "slider",
+					"hover": "Wurfwaffen sind alle geworfenen Waffen, die nicht horinzontal geworfen werden und sich durch rotation stabilisieren, wie Messer, sondern in einem Bogen. Auch Speere zählen nicht zu den Wurfwaffen.",
+					"min": 1,
+					"max": 25,
+					"default": 5,
+					"accent": [
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+
+				},
+				"Wurfmesser": {
+					"type": "slider",
+					"hover": "Wurfmesser sind Wurfwaffen, die sich durch Rotation stabilisieren, und deren Flugbahn horinzontal verläuft, wie Messer oder Spielkarten.",
+					"min": 1,
+					"max": 20,
+					"default": 3,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5
+					]
 
 				},
 				"Peitsche": {
 					"type": "slider",
 					"hover": "Peitschen sind Schlagwaffen aus Leder. Sie sind schwer zu führen und richten nur mäßigen Schaden an, können aber ihren Gengner entwaffnen.",
 					"min": 1,
-					"max": 30,
-					"default": 5,
+					"max": 25,
+					"default": 6,
 					"accent": [
-						2,
-						3,
 						4,
 						5,
 						6,
@@ -731,16 +707,15 @@
 					"type": "slider",
 					"hover": "Schilde sind zur Verteidigung genutzte Objekte. Handschilde sind alle Schilde die man mit einer Hand trägt, zum Beispiel Rundschilde oder Wappenschilde.",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 20,
+					"default": 5,
 					"accent": [
+						2,
 						3,
 						4,
 						5,
 						6,
-						7,
-						8,
-						9
+						7
 					]
 
 				},
@@ -748,16 +723,30 @@
 					"type": "slider",
 					"hover": "Schilde sind zur Verteidigung genutzte Objekte. Großschilde sind alle Schilde die auf der Erde abgesetzt werden, wenn man Kämpft, wie Turmschilde.",
 					"min": 1,
-					"max": 30,
-					"default": 6,
+					"max": 20,
+					"default": 3,
 					"accent": [
-						3,
 						4,
 						5,
 						6,
 						7,
+						8
+					]
+
+				},
+				"Steinschleuder": {
+					"type": "slider",
+					"hover": "Steinschleudern sind Astgabeln mit einem Abzug dazwischen, durch den ein Geschoss abgefeurt wird, meist ein runder Stein. Sie sind leicht zu transportieren und die Monition lässt sich überall finden.",
+					"min": 1,
+					"max": 25,
+					"default": 7,
+					"accent": [
+						5,
+						6,
+						7,
 						8,
-						9
+						9,
+						10
 					]
 
 				},
@@ -765,6 +754,138 @@
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie gut du mit Waffen umgehen kannst, die eigentlich keine sind, zum Beispiel Steine, Äste oder Stühle.",
 					"min": 1,
+					"max": 25,
+					"default": 6,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+
+				},
+				"Suspekte Waffen": {
+					"type": "slider",
+					"hover": "Suspekte Waffen sind seltene Waffen, die durch keinen Wert genauer definiert sind. Dies sind meist Rituelle Waffen, die für Zeremonien verwendet werden, oder fremde Waffen von weit her.",
+					"min": 1,
+					"max": 20,
+					"default": 3,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+
+				}
+
+			}
+		},
+		"Fuchs": {
+			"type": "category",
+			"contents": {
+				"Geruchssinn": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an wie gut der Fuchs Gerüche wahrnehmen, verfolgen und unterscheiden kann.",
+					"min": 1,
+					"max": 30,
+					"default": 10,
+					"accent": [
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				},
+				"Sehsinn": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an, wie gut der Fuchs sehen kann. ",
+					"min": 1,
+					"max": 30,
+					"default": 5,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				"Tastsinn": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut der Tastsinn des Fuchses ist.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				"Hörsinn": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an wie stark dein Charakter ist. Um so stärker er ist, umso besser kann er mit schweren Waffen wie Streitkolben und Äxten umgehen und desto mehr Gegenstände kann er mit sich tragen. Auch wenn dein Charakter aktiv etwas tuen möchte das Kraft erfordert, wie das Hochheben einer Person oder das Wegräumen von Geröll auf der Strasse kommt dieser Wert zum Einsatz.",
+					"min": 1,
+					"max": 30,
+					"default": 15,
+					"accent": [
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				"Lautstärke": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt, wie laut dein Fuchs bellen kann. Je lauter er ist, desto eher hört man ihn und desto eher schlägt er Tiere in die Luft.",
+					"min": 1,
+					"max": 15,
+					"default": 4,
+					"accent": [
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				"Kraft": {
+					"type": "slider",
+					"hover": "Dieser Wert gibt an wie stark der Fuchs ist. Er wird verwendet wenn der Fuchs aktiv etwas tuen möchte das Kraft erfordert, wie das schleifen eines Körpers oder das Wegräumen von Geröll auf der Strasse kommt dieser Wert zum Einsatz.",
+					"min": 1,
+					"max": 30,
+					"default": 7,
+					"accent": [
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				},
+				"Ausdauer": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut des Fuchses Ausdauer ist. Er Bestimmt wie lange du Kraftzehrende Aktionen ausführen kannst. Auch ist er wichtig für den Kampf. Rennst du einfach weiter, obwohl du keine Ausdauer mehr hast, fällst du vermutlich bewusstlos um.",
+					"min": 1,
 					"max": 30,
 					"default": 6,
 					"accent": [
@@ -776,14 +897,98 @@
 						8,
 						9
 					]
-
 				},
-				"Suspekte Waffen": {
+				"Schwimmen": {
 					"type": "slider",
-					"hover": "Suspekte Waffen sind seltene Waffen, die durch keinen Wert genauer definiert sind. Dies sind meist Rituelle Waffen, die für Zeremonien verwendet werden, oder fremde Waffen von weit her.",
+					"hover": "Dieser Wert bestimmt wie gut und wie schnell du schwimmen kannst. Bei einem Wert von unter 6 bestimmt er wie viel Zeit dir bleibt bis du ertrinkst wenn du ins Wasser fällst. Für die Dauer deines Schwimmens kannst du ebenfalls deinen Ausdauer Wert erhöhen.",
 					"min": 1,
 					"max": 30,
-					"default": 3,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				"Immunsystem": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du dich selbst kennst und dich selbst beherrschen kannst. Je höher dieser Wert ist, desto mehr informationen über dein Aktuelles Skill-Level kannst du erfragen. Ausserdem bestimmt er wie gut du mit magischen Gegenständen umgehen kannst.",
+					"min": 1,
+					"max": 30,
+					"default": 9,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				"Überlebensistinkt": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du taktisch in der Wildnis agierst. Mit einem hohen Wert wirst kommt der Fuchs auch ohne den Vulper herrvorragend aus.",
+					"min": 1,
+					"max": 30,
+					"default": 9,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				"Schleichen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie leise und der Fuchs ist und wie warscheinlich er gesehen wird, wenn er sich versteckst.",
+					"min": 1,
+					"max": 30,
+					"default": 8,
+					"accent": [
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				},
+				"Beißen": {
+					"type": "slider",
+					"hover": "Das Gebiß ist die wichtigste Waffe des Fuchses. Dieser Wert bestimmt wie gut und stark der Fuchs beißt und wie effektiv er kämpft.",
+					"min": 1,
+					"max": 30,
+					"default": 6,
+					"accent": [
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				"Gehorsam": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie Gehorsam der Fuchs innerhalb des Paleshs ist.",
+					"min": 1,
+					"max": 6,
+					"default": 2,
 					"accent": [
 						1,
 						2,
@@ -792,9 +997,7 @@
 						5,
 						6
 					]
-
 				}
-
 			}
 		},
 		"Auftreten": {
@@ -811,20 +1014,17 @@
 				"Augenfarbe": {
 					"type": "dropdown",
 					"items": [
-						"Blau",
-						"Grün",
-						"Braun"
+						"Schwarz",
+						"Rot",
+						"Blau"
 					]
 				},
 				"Hautfarbe": {
 					"type": "dropdown",
 					"items": [
-						"Weiß",
-						"Beige",
 						"Hellbraun",
-						"Mittelbraun",
-						"Dunkelbraun",
-						"Schwarzbraun"
+						"Rötlich",
+						"Orange"
 					]
 				},
 				"Haarfarbe": {
@@ -833,11 +1033,17 @@
 						"Schwarz",
 						"Dunkelbraun",
 						"Braun",
-						"Dunkelblond",
-						"Blond",
 						"Rot",
-						"Weiß",
 						"Grau"
+					]
+				},
+				"Fellfarbe": {
+					"type": "dropdown",
+					"items": [
+						"Rot",
+						"Orange",
+						"Weiß (Albino)",
+						"Silber"
 					]
 				},
 				"Alter": {
