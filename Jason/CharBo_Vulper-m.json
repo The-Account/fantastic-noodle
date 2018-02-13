@@ -331,6 +331,22 @@
 						14
 					]
 				},
+				"Fährtenlesen": {
+					"type": "slider",
+					"hover": "Dieser Wert bestimmt wie gut du Spuren folgen kannst. Er bestimmt auch wie gut du in der Wildnis überleben kannst, z.B: wie man Feuer macht, welche pflanzen man Essen kann und ähnliches.",
+					"min": 1,
+					"max": 30,
+					"default": 9,
+					"accent": [
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
 				"Handwerk": {
 					"type": "slider",
 					"hover": "Dieser Wert bestimmt wie gut Objekte sind die du Herstellst. Das können Waffen sein, aber auch Boote oder Möbel, Taschen, Statuen oder Kleidung und sehr vieles mehr. Mit einem guten handwerklichen Geschick lässt sich viel Geld verdienen.",
